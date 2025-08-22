@@ -7,11 +7,17 @@
     */
 
     //ENTRADA
-
-
+const n1 = Number(prompt(`Insira um numero`));
+const n2 = Number(prompt(`Insira um numero`));
     //PROCESSAMENTO
-
-
+let array
+const diferenca = n1-n2
+if (diferenca > 0) { array = [n2 , n1]
+  
+} else {
+    array = [n1 ,n2]
+    
+}
     //SAÍDA
-
+alert(`${array.join(" - ")} `);
 </script>
