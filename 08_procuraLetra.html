@@ -1,4 +1,4 @@
-<meta charset="UTF-8" />
+meta charset="UTF-8" />
 <script>
     /*
     PROBLEMA: PROCURAR LETRA
@@ -9,11 +9,16 @@
     */
 
     //ENTRADA
-
-
+    const palavra = prompt(`informe uma palavra`).toUpperCase();
+    const letra = prompt(`informe uma letra`).toUpperCase();
     //PROCESSAMENTO
-
-
+   const lugar = palavra.indexOf(letra);
+   
+   if (lugar !== -1) {
+        alert(`A letra ${letra} existe na palavra ${palavra} e sua primeira posição é ${posicao}.`);
+    } else {
+        alert(`A letra ${letra} não existe na palavra ${palavra}.`);
+    }
     //SAÍDA
 
 </script>
